@@ -29,7 +29,8 @@ jobs:
         
     - name: Install surge
       run: npm install -g surge
-    -name: Run surge
+      
+    - name: Deploy Surge
       run: surge ./ haqnawaz_bootcamp2020_1.surge.sh --token ${{secretS.SURGE_TOKEN}}
     # run: surge ./build expence-tracker-haqnawaz.surge.sh/ --token ${{secrets.SURGE_TOKEN}} 
 
